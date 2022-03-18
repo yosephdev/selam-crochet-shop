@@ -1,9 +1,9 @@
-export function renderCrochets(garment) {
+export function renderCrochets(crochet) {
   const crochetLi = document.createElement("li");
 
   const crochetH3 = document.createElement("h3");
   crochetH3.classList.add("item-name");
-  crochetH3.textContent = garment.name;
+  crochetH3.textContent = crochet.name;
   crochetLi.append(crochetH3);
 
   const imgContainer = document.createElement("div");
@@ -11,8 +11,8 @@ export function renderCrochets(garment) {
   crochetLi.append(imgContainer);
 
   const crochetImg = document.createElement("img");
-  crochetImg.src = garment.image;
-  crochetImg.alt = garment.description;
+  crochetImg.src = crochet.image;
+  crochetImg.alt = crochet.description;
   imgContainer.append(crochetImg);
 
   const textContainer = document.createElement("div");
