@@ -8,3 +8,11 @@ export function getAndSeedProducts() {
 
   return products;
 }
+
+export function addProduct(crochet) {
+  const crochetArr = getAndSeedProducts();
+
+  crochetArr.push(crochet);
+
+  localStorage.setItem(PRODUCTS, JSON.stringify(crochetArr));
+}

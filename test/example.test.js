@@ -85,7 +85,9 @@ test("given a new product obj, add obj to products in local storage", (expect) =
 
   addProduct(newProduct);
 
-  const actual = JSON.parse(localStorage.getItem(PRODUCTS) || "[]")[0];
+  const parsedArr = JSON.parse(localStorage.getItem(PRODUCTS) || "[]");
+  // set actual to last item in parsed array
+  const actual = parsedArr[parsedArr.length - 1];
 
   //Expect
   // Make assertions about what is expected versus the actual result
