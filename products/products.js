@@ -1,5 +1,5 @@
 import { renderCrochets } from "./crochets-render.js";
-import { updateCartCount } from "../jutils.js";
+import { updateCartCount } from "../utils.js";
 import { getAndSeedProducts } from "../admin/products-api.js";
 
 updateCartCount();
