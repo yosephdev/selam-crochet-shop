@@ -1,4 +1,4 @@
-import { isImgString, updateCartCount } from "../utils.js";
+import { isImgString, updateCartCount } from "../js/utils.js";
 import {
   addProduct,
   getAndSeedProducts,

@@ -1,5 +1,5 @@
 import { crochets } from "../products/crochets.js";
-import { findByID } from "../utils.js";
+import { findByID } from "../js/utils.js";
 const PRODUCTS = "products";
 
 export function getAndSeedProducts() {

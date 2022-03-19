@@ -2,7 +2,7 @@
 
 import { clearCart, getCart } from "../cart/cart-api.js";
 import { renderCartRow } from "./render-cart-row.js";
-import { findByID, calcOrderTotal } from "../utils.js";
+import { findByID, calcOrderTotal } from "../js/utils.js";
 import { getAndSeedProducts } from "../admin/products-api.js";
 
 

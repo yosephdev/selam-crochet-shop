@@ -1,4 +1,4 @@
-import { getCart } from "./cart/cart-api.js";
+import { getCart } from "../cart/cart-api.js";
 
 export function findByID(id, array) {
   for (const item of array) {
