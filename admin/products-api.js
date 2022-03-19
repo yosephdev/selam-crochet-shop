@@ -12,7 +12,8 @@ export function getAndSeedProducts() {
 export function addProduct(crochet) {
   const crochetArr = getAndSeedProducts();
 
-  crochetArr.push(crochet);
+  if (!findByID(crochet.id, crochetArr)) crochetArr.push(crochet);
+  else alert("invalid ID, already taken");
 
   localStorage.setItem(PRODUCTS, JSON.stringify(crochetArr));
 }

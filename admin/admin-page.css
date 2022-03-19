@@ -8,4 +8,10 @@ form {
 
 .form-container {
     display: flex;
+    flex-direction: column;
+}
+
+#admin-remove-form{
+    display: flex;
+    flex-direction: column;
 }
