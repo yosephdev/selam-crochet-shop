@@ -1,4 +1,5 @@
 import { crochets } from "../products/crochets.js";
+import { findByID } from "../utils.js";
 const PRODUCTS = "products";
 
 export function getAndSeedProducts() {
@@ -20,4 +21,11 @@ export function addProduct(crochet) {
 
 export function clearProducts() {
   localStorage.setItem(PRODUCTS, JSON.stringify(crochets));
+}
+
+export function removeProduct(id) {
+  const garmentArr = JSON.parse(localStorage.getItem(PRODUCTS));
+  const removeIndex = garmentArr.indexOf(findByID(id, garmentArr));
+  garmentArr.splice(removeIndex, 1);
+  localStorage.setItem(PRODUCTS, JSON.stringify(garmentArr));
 }
