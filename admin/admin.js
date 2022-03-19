@@ -17,7 +17,7 @@ formElement.addEventListener("submit", (e) => {
   e.preventDefault();
   let myFormData = new FormData(formElement);
 
-  const newGarment = {
+  const newCrochet = {
     id: Number(myFormData.get('ID')),
     name: myFormData.get("Name"),
     image: isImgString(myFormData.get("Image"))
