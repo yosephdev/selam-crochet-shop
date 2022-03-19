@@ -48,6 +48,21 @@ header {
   border: 1px solid darkslategrey;
 }
 
+.cart-container{
+    width: 100%;
+    position: absolute;
+    left: 40%;
+    margin: 5px;
+    padding: 5px;
+}
+.cart-container :hover :last-child {
+    filter: invert(50%);
+}
+.cart-container span {
+    box-sizing: border-box;
+    position: absolute;
+}
+
 @font-face {
   font-family: "Reeperbahn";
   src: url("../assets/Reeperbahn.ttf");
