@@ -1,5 +1,7 @@
 import { findByID } from "../js/utils.js";
 
+localStorage.setItem("cart", JSON.stringify([]));
+
 export function getCart(cartKey) {
   const cart = JSON.parse(localStorage.getItem(cartKey) || "[]");
   return cart;

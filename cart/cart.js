@@ -1,16 +1,11 @@
 //import functions
-
 import { clearCart, getCart } from "../cart/cart-api.js";
+import { crochets } from "../products/crochets.js";
 import { renderCartRow } from "./render-cart-row.js";
 import { findByID, calcOrderTotal } from "../js/utils.js";
-import { getAndSeedProducts } from "../admin/products-api.js";
-
-
-const crochets = getAndSeedProducts();
-const CART = "cart";
 
 // grab storage data
-const cartData = getCart(CART);
+const cartData = JSON.parse(localStorage.getItem("cart"));
 
 //grab dom elements
 

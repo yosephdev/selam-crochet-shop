@@ -24,8 +24,8 @@ export function clearProducts() {
 }
 
 export function removeProduct(id) {
-  const garmentArr = JSON.parse(localStorage.getItem(PRODUCTS));
-  const removeIndex = garmentArr.indexOf(findByID(id, garmentArr));
-  garmentArr.splice(removeIndex, 1);
-  localStorage.setItem(PRODUCTS, JSON.stringify(garmentArr));
+  const crochetArr = JSON.parse(localStorage.getItem(PRODUCTS));
+  const removeIndex = crochetArr.indexOf(findByID(id, crochetArr));
+  crochetArr.splice(removeIndex, 1);
+  localStorage.setItem(PRODUCTS, JSON.stringify(crochetArr));
 }
