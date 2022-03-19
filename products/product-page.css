@@ -4,16 +4,21 @@ p, h3, button {
     margin: 0;
 }
 
-img {
+.main-section li img {
     width: 100px;
     height: 100px;
     border: 1px gray solid;
+}
+
+.main-section {
+    margin-top: 35%;
 }
 
 .main-section ul {
     padding-top: 10%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .main-section li {
@@ -23,8 +28,9 @@ img {
     align-items: center;
     border: 3px black solid;
     border-radius: 5px;
-    width: 200px;
-    margin: 20px;
+    width: 25%;
+    height: 30%;
+    margin:20px;
     background-color:#b7b5b3;
     box-shadow: 0px 10px 20px -12px rgba(0,0,0,1);
 
