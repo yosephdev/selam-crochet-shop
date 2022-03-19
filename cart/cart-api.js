@@ -1,4 +1,4 @@
-import { findByID } from "../utils.js";
+import { findByID } from "../js/utils.js";
 
 export function getCart(cartKey) {
   const cart = JSON.parse(localStorage.getItem(cartKey) || "[]");
