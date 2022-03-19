@@ -1,6 +1,8 @@
 // IMPORT MODULES under test here:
-import { renderCrochets } from "../products/crochets-render.js";
-import { findByID } from "../utils.js";
+import { findByID, calcItemTotal, calcOrderTotal } from "../utils.js";
+import { renderCartRow } from "../cart/render-cart-row.js";
+import { getCart, addToCart, clearCart } from "../cart/cart-api.js";
+import { addProduct } from "../admin/products-api.js";
 
 const test = QUnit.test;
 
@@ -52,5 +54,41 @@ test("given an ID and an array, return corresponding obj from arr with same ID",
 
   //Expect
   // Make assertions about what is expected versus the actual result
+  expect.deepEqual(actual, expected);
+});
+
+
+const PRODUCTS = "products";
+
+localStorage.setItem("testCart", JSON.stringify(testCart));
+localStorage.setItem("testCart2", JSON.stringify(testCart2));
+
+//add product test
+
+test("given a new product obj, add obj to products in local storage", (expect) => {
+  //Arrange
+  // Set up your arguments and expectations
+  const newProduct = {
+    id: 6,
+    name: "boots",
+    img: "",
+    description: "they are boots",
+    category: "clothing",
+    price: 10,
+  };
+
+  const expected = newProduct;
+
+  //Act
+
+  // Call the function you're testing and set the result to a const
+
+  addProduct(newProduct);
+
+  const actual = JSON.parse(localStorage.getItem(PRODUCTS) || "[]")[0];
+
+  //Expect
+  // Make assertions about what is expected versus the actual result
+
   expect.deepEqual(actual, expected);
 });
