@@ -4,3 +4,7 @@ export function findByID(id, array) {
   }
   return;
 }
+
+export function updateCartCount() {
+  cartCountSpan.textContent = finalCount;
+}
