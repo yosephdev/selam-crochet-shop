@@ -19,6 +19,8 @@ main {
   justify-content: center;
   align-items: center;
   margin-bottom: calc(var(--footer-height));
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.1em;
 }
 
 section {
@@ -36,6 +38,14 @@ section {
   border: solid 2px var(--pine-tree);
 }
 
+.main-section {
+    margin-top: 10%;
+    width: 50%;
+    background-color: #607744ff;
+    border: 2px dotted gray;
+    border-radius: 10px;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -48,19 +58,21 @@ header {
   border: 1px solid darkslategrey;
 }
 
-.cart-container{
-    width: 100%;
-    position: absolute;
-    left: 40%;
-    margin: 5px;
-    padding: 5px;
+.cart-container {
+  width: 100%;
+  position: absolute;
+  left: 40%;
+  margin: 5px;
+  padding: 5px;
 }
+
 .cart-container :hover :last-child {
-    filter: invert(50%);
+  filter: invert(50%);
 }
+
 .cart-container span {
-    box-sizing: border-box;
-    position: absolute;
+  box-sizing: border-box;
+  position: absolute;
 }
 
 @font-face {
@@ -82,7 +94,7 @@ nav {
 }
 
 a {
-  color: #B0A8B9;
+  color: #b0a8b9;
   text-decoration: none;
   margin: 5px;
 }
@@ -135,34 +147,39 @@ footer {
 }
 
 button {
-    margin: 10px;
-    padding: 15px;
-    background-color: rgb(212, 212, 212);
-    font-family: "Reeperbahn", cursive;
-    font-size: 2em;
-    border-radius: 50%;
-    outline: none;
-    text-align: center;
+  margin: 10px;
+  padding: 15px;
+  background-color: rgb(212, 212, 212);
+  font-family: "Reeperbahn", cursive;
+  font-size: 2em;
+  border-radius: 50%;
+  outline: none;
+  text-align: center;
 }
+
 .table-container {
-    width: 100%;
+  width: 100%;
 }
+
 table {
-    width: 100%;
-    text-align: center;
-    background-color: #CCF;
-    border: 2px dotted gray;
-    border-radius: 10px;
-    padding: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: #ccf;
+  border: 2px dotted gray;
+  border-radius: 10px;
+  padding: 20px;
 }
+
 th {
-    font-weight: bold;
-    border: 5px solid gray;
-    border-radius: 10px;
+  font-weight: bold;
+  border: 5px solid gray;
+  border-radius: 10px;
 }
+
 td {
-    padding-top: 25px;
+  padding-top: 25px;
 }
+
 .hidden {
-    display: none;
+  display: none;
 }
