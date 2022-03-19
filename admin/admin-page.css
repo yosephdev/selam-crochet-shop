@@ -5,3 +5,7 @@ form {
     border: 2px dotted gray;
     border-radius: 10px;
 }
+
+.form-container {
+    display: flex;
+}

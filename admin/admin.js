@@ -3,6 +3,7 @@ import {
   addProduct,
   getAndSeedProducts,
   clearProducts,
+  removeProduct,
 } from "./products-api.js";
 
 updateCartCount();
@@ -10,6 +11,7 @@ getAndSeedProducts();
 
 let formElement = document.getElementById("admin-form");
 const resetButton = document.getElementById("reset-product-button");
+let removeFormElement = document.getElementById("admin-remove-form");
 
 formElement.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -27,6 +29,13 @@ formElement.addEventListener("submit", (e) => {
   };
   addProduct(newCrochet);
   formElement.reset();
+});
+
+removeFormElement.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let myFormData = new FormData(removeFormElement);
+
+  removeProduct(Number(myFormData.get("ID")));
 });
 
 resetButton.addEventListener("click", () => {
