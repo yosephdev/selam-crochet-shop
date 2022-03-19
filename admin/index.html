@@ -30,28 +30,29 @@
   </header>
   <main>
     <section class="main-section">
-      <form action="./">
+      <form action="./" id = "admin-form">
         <input type="number" name="ID" placeholder="Product ID">
         <hr>
 
         <input type="text" name="Name" placeholder="Product Name">
         <hr>
 
-        <p>Product Image</p>
-        <input type="file" name="Image">
+        <p>Product Image URL</p>
+        <input type="text" name="Image">
         <hr>
 
         <input type="text" name="Description" placeholder="Product Description">
         <hr>
 
-        <input type="text" name="category" placeholder="Product Category">
+        <input type="text" name="Category" placeholder="Product Category">
         <hr>
 
         <input type="number" name="Price" placeholder="Product Price">
         <hr>
+        <button id='admin-submit-button' type = "submit">Submit product</button>
 
       </form>
-      <button id='admin-submit-button'>Submit product</button>
+      <button id="reset-product-button">Reset products</button>
     </section>
   </main>
   <footer>

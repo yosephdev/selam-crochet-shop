@@ -16,3 +16,7 @@ export function addProduct(crochet) {
 
   localStorage.setItem(PRODUCTS, JSON.stringify(crochetArr));
 }
+
+export function clearProducts() {
+  localStorage.setItem(PRODUCTS, JSON.stringify(crochets));
+}
