@@ -1,5 +1,4 @@
 import { addToCart } from "../cart/cart-api.js";
-import { findByID } from "../utils.js";
 
 export function renderCrochets(crochet) {
   const crochetLi = document.createElement("li");
