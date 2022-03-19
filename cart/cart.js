@@ -1,11 +1,12 @@
 //import functions
-import { clearCart, getCart } from "../cart/cart-api.js";
+
 import { crochets } from "../products/crochets.js";
 import { renderCartRow } from "./render-cart-row.js";
 import { findByID, calcOrderTotal } from "../js/utils.js";
+import { clearCart, getCart } from "../cart/cart-api.js";
 
 // grab storage data
-const cartData = JSON.parse(localStorage.getItem("cart"));
+const cartData = getCart("cart");
 
 //grab dom elements
 
@@ -32,13 +33,13 @@ totalTd3.textContent = `$${calcOrderTotal(cartData, crochets)}`;
 
 table.append(totalTr);
 
-if (cartData.length === 0) orderButton.disabled = true;
-else orderButton.disabled = false;
+if (cartData.length === 0) orderButton.classList.add("hidden");
+else orderButton.classList.remove("hidden");
 
 orderButton.addEventListener("click", () => {
    const parsedCart = JSON.stringify(cartData, true, 2);
    alert(`Thank you for your order! you ordered ` + parsedCart);
-   clearCart(CART);
+   clearCart('cart');
 });
 
 clearCartButton.addEventListener("click", () => {

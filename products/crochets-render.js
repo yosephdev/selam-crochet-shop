@@ -1,3 +1,6 @@
+import { addToCart } from "../cart/cart-api.js";
+import { findByID } from "../utils.js";
+
 export function renderCrochets(crochet) {
   const crochetLi = document.createElement("li");
 
@@ -34,10 +37,24 @@ export function renderCrochets(crochet) {
   crochetDescriptionP.textContent = crochet.description;
   textContainer.append(crochetDescriptionP);
 
+  const quantityInput = document.createElement("input");
+  quantityInput.type = "number";
+  quantityInput.min = 1;
+  quantityInput.placeholder = "quantity";
+  crochetLi.append(quantityInput);
+
   const addButton = document.createElement("button");
   addButton.textContent = "Add to cart";
   addButton.classList.add("add-button");
   crochetLi.append(addButton);
+
+  addButton.addEventListener("click", () => {
+    const crochetQuantity = quantityInput.value
+      ? Number(quantityInput.value)
+      : 1;
+    addToCart(crochet, "cart", crochetQuantity);
+    quantityInput.value = quantityInput.placeholder;
+  });
 
   return crochetLi;
 }
