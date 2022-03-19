@@ -1,8 +1,12 @@
+.main-section {
+    margin-top: 10%;
+    background-color: #607744ff;
+}
+
 form {
     text-align: center;
     background-color: #B0A8B9;
-    padding: 20px;
-    margin: 25px;
+    padding: 20px;    
     width: 250px;
     border: 2px dotted gray;
     border-radius: 10px;
