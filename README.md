@@ -1,62 +1,40 @@
-# Selam-crochet-shopping site
+<h1 align="center">Selam's Handmade Crochet Shop</h1>
+<p align="center">An e-commerce website that displays products and connects to the seller... 💻💳🧶</p>
 
-- HTML:
+<br>
+<div align="center"> 
+  <img src="https://img.shields.io/badge/GitHub-000?style=social&logo=github&logoColor=469BD2">
+  &nbsp;
+  <img src="https://img.shields.io/badge/HTML-000?style=social&logo=html5&logoColor=469BD2">
+  &nbsp;
+  <img src="https://img.shields.io/badge/CSS-000?style=social&logo=css3&logoColor=469BD2">
+  &nbsp;
+  <img src="https://img.shields.io/badge/JavaScript-000?style=social&logo=javascript&logoColor=469BD2">
+</div>
+<br>
 
-  - Home page
-    - Heading
-    - link to products page
-    - footer
-  - products page
-    - Heading
-    - Li element
-    - (dynamic products)
-      - one temp hard coded product
-    - footer
+## 💻 Status of the project:
 
-- Js:
+- Completed project ✔️
 
-  - create data model for crochet items
-    - garments.js
-      - name, price, etc 
-      - ver: log
-  - create render function
-    - TDD render function based on hard coded example
-    - ver: tests will pass
-  - generate product list on product page Li.
-    - Ver: products will render properly
+## 🛠 Technologies:
 
-- css: unified style, then individual page stylings.
+- HTML
+- CSS
+- JavaScript
 
-- admin page: 
-    - HTML: 
-        - Create Header w/ nav
-        - Create form element with inputs for products
-            - what do we need to add product?
-                - name
-                - img
-                - id
-                - category
-                - price
-                - description
-            - create submit button
-    - JS: 
-        - add hardcoded data to localStorage
-           - func: seedAndGetProducts
-                - check local storage for product, if not add []
-                - get parsed products from localStorage
-                - return 
-        - TDD func for addProduct
-            - takes product obj
-            - grabs products arr from local storage
-            - const parsedProducts = seedAndGetProducts();
-            - parsedProducts.push(product)
-            - add new arr to local storage
+## 📝 Features:
 
-            takes obj, returns arr(test will compare old arr to new arr) 
+- [x] responsive website (CSS)
+- [x] Dynamic header (JavaScript)
+- [x] Use semantic tags (HTML)
+- [x] Implement FlexBox concepts (CSS)
+- [x] Implement Grid concepts (CSS)
+- [x] Use Cards (CSS)
 
-        - products.js ->
-            - grab form element
-            - add event listener for submit button
-            - create new product obj using form data
-            - addProduct(new product obj)
-            - reset form 
+## 🚀 How to run the application?
+
+- Visit the [application site].(https://www.selamshandmade.com)
+
+
+
