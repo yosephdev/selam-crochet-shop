@@ -5,35 +5,137 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://kit.fontawesome.com/a97da01e51.js" crossorigin="anonymous"></script>  
   <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" type="text/css" href="css/style.css">  
-  <link rel="stylesheet" type="text/css" href="css/home.css">
-  <title>Home page</title>
+  <title>Selam's Handmade</title>
 </head>
 
 <body>
-  <header>
-    <h1>Welcome to Selam's Handmade Crochet Shop!</h1>
-    <nav>
-      <!-- Menu items -->
-      <ul>
-        <li class='nav-products'><a href="./products">Products</a></li>
-        <li class='nav-home'><a href="index.html">Home</a></li>
-        <li class='nav-admin'><a href="./admin">Admin</a></li>
-      </ul>
-    </nav>
+  <header id="header">
+    <div class="container">
+      <a class="logo" href="#">Selam's Handmade</a>
+      <link rel="shortcut icon" type="image/x-icon" href="/assets/color1_logo_light_background.png" />
+
+      <nav>
+        <a class="icon" href="#home"><i class="fas fa-home"></i></a>
+        <a class="icon" href="#store"><i class="fas fa-store-alt"></i></a>
+        <a class="icon" href="#madeBy"><i class="fas fa-user-friends"></i></a>
+        <a class="icon" href="#contact"><i class="fas fa-phone-alt"></i></a>
+      </nav>
+    </div>
   </header>
   <main>
-    <section class="main-section"></section>
+    <section class="home" id="home">
+      <div class="logo"></div>
+      <p><span class="icon"><i class="fas fa-store"></i></span> Crochet Shop </p>
+      <p><span class="icon"><i class="fas fa-hand-holding-heart"></i></span> Handmade, with lots of love</p>
+      <p><span class="icon"><i class="fas fa-caret-square-down"></i></span> Ordering via Etsy</p>
+      <p><span class="icon"><i class="fas fa-map-marker-alt"></i></span> London - England, United Kingdom</p>
+    </section>
+
+    <section class="store" id="store">
+      <div>
+        <h3 class="title">BABIES & KIDS</h3>
+        <img class="image" src="assets/poncho.jpg" alt="Product Photo">
+        <div class="container">
+          <div class="size">Price: £12.00</div>
+          <div class="color" style="background-color: #EFE1E2;">Child Poncho</div>
+          <a class="button" href="https://www.etsy.com/uk/shop/SelamsHandmade" target="_blank" rel="external">Order</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="title">SCARVES & HATS</h3>
+        <img class="image" src="assets/scarf-dark-purple.jpg" alt="Product Photo">
+        <div class="container">
+          <div class="size">Price: £18.00</div>
+          <div class="color" style="background-color: var(--lightpurple); color: var(--white);">Lacy design scarf</div>
+          <a class="button" href="https://www.etsy.com/uk/shop/SelamsHandmade" target="_blank" rel="external">Order</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="title">ACCESSORIES</h3>
+        <img class="image" src="assets/ac45.jpg" alt="Product Photo">
+        <div class="container">
+          <div class="size">Price: £3.19</div>
+          <div class="color" style="background-color: #FFF;">Head Band/Ear Warmer</div>
+          <a class="button" href="https://www.etsy.com/uk/shop/SelamsHandmade" target="_blank" rel="external">Order</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="madeBy" id="madeBy">
+      <div>
+        <img class="picture" src="assets/selam-asres.jpg" alt="Photo of the product seller">
+        <div class="container">
+          <h2 class="title">Selamawit Asres</h2>
+          <div>
+            <p class="paragraph">Hello, I am Selam, the smiling person on the picture, and I am in love with the art
+              of crochet.
+            </p>
+            <p class="paragraph">My products are all handmade, crocheted for certain seasons or everyday wear - a skill that has lasted a lifetime since
+            I was 7 years old.
+            
+            <p class="paragraph">To crochet is a handy skill to have, but the work is also quite therapeutic and through it I've crafted pieces of
+            clothing for myself and my family.</p>
+            
+             <p class="paragraph">There is a beauty to handmade products, and I want to share that with others through my products at an affordable price. </p>
+          </div>
+          <div class="icon">
+            <a href="https://www.instagram.com/selam/" target="_blank" rel="external"><i
+                class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/kuntish" target="_blank" rel="external"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.etsy.com/uk/people/kwnk6g0o50lje07z" target="_blank" rel="external"><i class="fab fa-etsy"></i></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img class="picture" src="assets/profile-image.jpg"
+          alt="Photo of the website developer">
+        <div class="container">
+          <h2 class="title">Yoseph Berhane</h2>
+          <div>
+            <p class="paragraph">Hello, I'm Yoseph, the person behind the development of this showcase website. </p>
+            <p class="paragraph">In order to help a friend and learn in the process I dedicated a few days to this
+              beautiful project.</p>
+          </div>
+          <div class="icon">
+            <a href="https://www.instagram.com/yosephbet/" target="_blank" rel="external"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yosephbet/" target="_blank" rel="external"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/isakbet/" target="_blank" rel="external"><i class="fab fa-github"></i></a>
+            <a href="https://yoseph.dev" target="_blank" rel="external"><i class="fas fa-desktop"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h1 class="title">Want to order?</h1>
+        <a class="link" href="https://api.whatsapp.com/send?text=Hello World!&phone=447763869504" target="_blank" rel="external">
+          Kindly send me a message on WhatsApp<i class="fab fa-whatsapp-square" style="color: var(--mediumblue);"></i></a>
+      </div>
+      <div class="container">
+        <h1 class="title">Any suggestions?</h1>
+        <a class="link" href="mailto:selamshandmade@gmail.com?subject=Hello,%20Selam%20Asres">Send me an e-mail<i
+            class="far fa-envelope" style="color: var(--violet);"></i></a>
+      </div>
+    </section>
   </main>
   <footer>
-  </footer>
-  <script type="module" src="js/app.js"></script>
+    <ul class="menu">
+      <li><a class="link" href="#home">Home</a></li>
+      <li><a class="link" href="#store">Store</a></li>
+      <li><a class="link" href="#madeBy">Made By</a></li>
+      <li><a class="link" href="#contact">Contact</a></li>
+    </ul>
+
+    <p class="paragraph">Made with ♡ by <a class="link" href="https://github.com/isakbet">Yoseph Berhane</a></p>
+  </footer>  
+  <script src="js/app.js"></script>
 </body>
 
 </html>
