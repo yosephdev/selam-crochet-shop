@@ -1,5 +1,5 @@
 <h1 align="center">Selam's Handmade Crochet Shop</h1>
-<p align="center">A showcase site that displays products and connects to the seller... 💻💳🧶</p>
+<p align="center">An e-commerce website that displays products and connects to the seller... 💻💳🧶</p>
 
 <br>
 <div align="center"> 
