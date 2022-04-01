@@ -155,7 +155,7 @@ main > .home > p
 
 main > .home > p > .icon
 {
-    color: var(--violet);
+    color: var(--lightblue);
     margin-right: 16px;
 }
 
