@@ -335,7 +335,7 @@ main > .contact {
 }
 
 main > .contact > .container {
-  background-color: var(--lightgray);
+  background-color: #00000070;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -346,12 +346,11 @@ main > .contact > .container {
 }
 
 main > .contact > .container > .title {
-  color: var(--mediumblue);
-  font-family: "Reeperbahn", cursive;
+  color: var(--lightgray);  
   letter-spacing: 1px;
   text-align: center;
   font-size: 1.5em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 main > .contact > .container > .link {
