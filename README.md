@@ -34,7 +34,7 @@
 
 ## 🚀 How to run the application?
 
-- Visit the [application site].(https://www.selamshandmade.com)
+- Visit the website.(https://selamshandmade.com)
 
 
 
