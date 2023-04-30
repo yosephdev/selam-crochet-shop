@@ -34,7 +34,7 @@
 
 ## 🚀 How to run the application?
 
-- Visit the website.(https://selamshandmade.com)
+- Visit the website.(https://stoic-clarke-7a75ae.netlify.app/)
 
 
 
